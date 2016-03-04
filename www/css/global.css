@@ -1,0 +1,38 @@
+
+	html, body {
+		height: 0px !important;
+		margin: 0;
+		padding: 0;
+	}
+	#main{
+		text-align: center;
+	}
+	aside {
+		float: left;
+		width: 100%;
+	}
+	h1{
+		font-size: 50px;
+		color: black;
+	}
+	h2{
+		font-size: 30px;
+		color: black;
+	}
+	h3{
+		font-size:20px;
+		color: black;
+	}
+	#map {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	
+	#directions-panel {
+		background-color:transparent !important;
+		margin-left:10%; 
+		margin-rigth:10%;"
+		height: 100%;
+		width: 80%;
+		overflow: auto;
+	}

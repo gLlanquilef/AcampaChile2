@@ -1,0 +1,514 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11pt;
+		line-height: 1.75em;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-weight: bold;
+	}
+	
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+		
+	strong, b
+	{
+		font-weight: bold;
+		color: #000000;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+
+	a
+	{
+		color: #389709;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+	
+	hr
+	{
+		border: 0;
+		border-top: solid 1px #ddd;
+	}
+	
+	blockquote
+	{
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+
+	header
+	{
+		margin-bottom: 2em;
+	}
+	
+		header h2
+		{
+			text-transform: uppercase;
+			color: #15061a;
+		}
+	
+		header .byline
+		{
+			display: block;
+			margin: 0.5em 0 0 0;
+			padding: 0 0 0.5em 0;
+		}
+		
+	footer
+	{
+		margin-top: 1em;
+	}
+
+	br.clear
+	{
+		clear: both;
+	}
+
+	/* Sections/Articles */
+	
+		section,
+		article
+		{
+			margin-bottom: 3em;
+		}
+		
+		section > :last-child,
+		article > :last-child
+		{
+			margin-bottom: 0;
+		}
+
+		section:last-child,
+		article:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.row > section,
+		.row > article
+		{
+			margin-bottom: 0;
+		}
+
+	/* Images */
+
+		.image
+		{
+			display: inline-block;
+		}
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.featured
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 0 0;
+			}
+			
+			.image.full
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+			
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+
+	/* Lists */
+
+		ul.default
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 0.90em;
+		}
+		
+			ul.default li
+			{
+				padding: 2.4em 0em;
+				border-top: 1px solid;
+				border-color: rgba(0,0,0,.1);
+				line-height: 1.6em;
+			}
+			
+			ul.default li:first-child
+			{
+				padding-top: 0;
+				border-top: 0;
+			}
+			
+			ul.default a
+			{
+				color: #2e222c;
+			}
+			
+			ul.default a:hover
+			{
+				text-decoration: none;
+			}
+			
+			ul.default img
+			{
+				float: left;
+				margin-right: 20px;
+			}
+			
+			ul.default .posted
+			{
+				margin: 0;
+				padding: 10px 0px 0px 0px;
+				font-size: 8pt;
+				font-style: italic;
+				color: #A2A2A2;
+			}		
+
+		ul.style1
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 0.90em;
+		}
+		
+			ul.style1 li
+			{
+				padding: 1em 0em;
+				border-top: 1px solid;
+				border-color: rgba(0,0,0,.1);
+				line-height: 1.6em;
+			}
+			
+			ul.style1 li:first-child
+			{
+				padding-top: 0;
+				border-top: 0;
+			}
+			
+			ul.style1 a
+			{
+				color: #2e222c;
+			}
+			
+			ul.style1 a:hover
+			{
+				text-decoration: none;
+			}
+
+	/* Buttons */
+		
+		.button
+		{
+			position: relative;
+			display: inline-block;
+			margin-top: 8px;
+			padding: 0.90em 1.5em;
+			background: #389709;
+			border-radius: 5px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			color: #FFF;
+			-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			cursor: pointer;
+		}
+
+			.button:hover
+			{
+				background: #307d09;
+				color: #FFF !important;
+			}
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
+/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
+/*********************************************************************************/
+
+	.fa
+	{
+		text-decoration: none;
+	}
+
+		.fa.solo
+		{
+		}
+		
+			.fa.solo span
+			{
+				display: none;
+			}
+
+		.fa:before
+		{
+			display:inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+
+	
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	}
+	
+		#logo h1
+		{
+			color: #FFF;
+		}
+	
+		#logo a
+		{
+			display: block;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 700;
+			line-height: 70px;
+			color: #1a1a1a;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		background: #272727;
+	}
+
+		#nav-wrapper
+		{
+		}
+		
+		#nav > ul
+		{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+			border-right: 1px solid;
+			border-color: rgba(255,255,255,.1);
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+				border-right: none;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: inline-block;
+				padding: 1em 1.5em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				outline: 0;
+				color: #FFF;
+			}
+
+			#nav li.active a
+			{
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+	
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		position: relative;
+		color: #fff;
+	}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		position: relative;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		position: relative;
+		border-color: rgba(0,0,0,.1);
+	}
+	
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright
+	{
+		position: relative;
+		padding: 3em 0em;
+		text-align: center;
+		color: rgba(255,255,255,.2);
+	}
+	
+	#copyright .container
+	{
+	}
+	
+	#copyright a
+	{
+	position: relative;
+		background: #FF6600;
+		
+		border-color: rgba(0,0,0,.1);
+	}
+	
+	.ocupado
+	{
+		background-color:red;
+		color:#000000;
+		animation:linear;
+	}			
+	.disponible
+	{
+		background-color:green;
+		color:#FFFFFF;
+	}	
+	/*Tablas para la gestion de sitios */
+table {
+	border: 1px black solid;
+	border-radius: 10px;
+	position: relative;
+}
+ 
+table td { 
+	border-left: 1px dotted #fff;
+	vertical-align: top; 
+    width: 30%;	
+	padding-left: 13px;
+    padding-top: 7px;
+ } 
+
+table input,select{
+	    width: 85%;
+}
+ 
+table2 td {
+padding:6px;
+}
+ 
+/*Primera fila, primera celda*/
+table2 tr:first-child td:first-child {
+border-radius:5px 0px 0px 0px;
+}
+ 
+/*Primera fila, última celda*/
+table2 tr:first-child td:last-child {
+border-radius:0px 5px 0px 0px;
+}
+ 
+/*Última fila, primera celda*/
+table2 tr:last-child td:first-child {
+border-radius:0px 0px 0px 5px;
+}
+ 
+/*Última fila, última celda*/
+table2 tr:last-child td:last-child {
+border-radius:0px 0px 5px 0px;
+}
+

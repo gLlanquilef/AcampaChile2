@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://www.acampachile.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.acampachile.cl$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
